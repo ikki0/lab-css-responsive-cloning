@@ -1,13 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
   <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-  <link rel="stylesheet" href="styles.min.css">
 </head>
+
 <body>
-  
+  <div class="chat">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-chat-dots-fill"
+      viewBox="0 0 16 16">
+      <path
+        d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+    </svg>
+  </div>
+  <header class="header">
+    <picture>
+      <img src="./images/logo.png" alt="imagen logo" />
+    </picture>
+
+    <div class="find">
+      <img class="lens" src="./images/search.png" alt="imagen lupa" />
+      <input type="text" name="buscado" id="buscado" placeholder="Discover your next favorie thing..." />
+    </div>
+    <div class="box-login">
+      <span class="dots">...</span>
+      <span>Login</span>
+    </div>
+
+  </header>
+
+  <nav>
+    <ul>
+      <li>
+        <a class="home" href="#">Home</a>
+      </li>
+
+      <li>
+        <a href="#">Tech</a>
+      </li>
+
+      <li>
+        <a href="#">Games</a>
+      </li>
+
+      <li>
+        <a href="#">Podcasts</a>
+      </li>
+
+      <li>
+        <a href="#">Books</a>
+      </li>
+
+      <li>
+        <a href="#">Boots</a>
+      </li>
+
+      <li>
+        <a href="#">Developer Tools</a>
+      </li>
+
+      <li>
+        <a href="#">iMessageApps</a>
+      </li>
+
+      <li class="">
+        <a href="#">iPhone</a>
+      </li>
+
+      <li>
+        <a href="#">Photography Tools</a>
+      </li>
+    </ul>
+
+    <div class="arrows">
+      <button type="button" class="btn arrow-left">
+        <img class="arrows arrow-left" src="./images/arrow-prev.png" alt="image arrow left">
+      </button>
+      <button type="button" class="btn arrow-right">
+        <img class="arrows arrow-right" src="./images/arrow-next.png" alt="image arrow next">
+      </button>
+    </div>
+  </nav>
+
+  <div class="welcome">
+    <div class="welcome-container">
+      <div class="info-welcome">
+        <p>
+          🖐️<span class="p-bold">Welcome to Product Hunt</span>
+          Get the best new products in your inbox, daily.
+        </p>
+        <div class="welcome-buttons">
+          <input type="email" name="email" id="email" placeholder="Your email" />
+          <button type="button">SUBSCRIBE</button>
+        </div>
+      </div>
+      <img class="close" src="./images/close.png" alt="image close" />
+    </div>
+  </div>
+
+  <main>
+    <div class="container-cards">
+      <section class="popular-week">
+        <header class="header-popular-week">
+          <h3>
+            Popular this week
+          </h3>
+          <img class="close" src="./images/close.png" alt="imagen X" />
+        </header>
+
+        <div class="cards">
+          <div class="card card-1">
+            <picture>
+              <img class="image-app" src="./images/popular-this-week/app-1.png" alt="imagen app-1" />
+            </picture>
+            <div class="info-card">
+              <h3>Duolingo Bots</h3>
+              <p>AI-powered characters to each language conversations</p>
+              <div class="buttons">
+                <button type="button">
+                  <img class="arrow-top" src="./images/votes.png" alt="image up arrow" />
+                  <span>1460</span>
+                </button>
+                <button type="button">
+                  <img class="comment" src="./images/comments.png" alt="image comments" />
+                  <span>49</span>
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-list-ul" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                  </svg>
+                  SAVE
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                    <path fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                  </svg>
+                </button>
+
+                <div class="buttons-end">
+                  <button type="button">
+                    IPHONE
+                  </button>
+                  <span>+2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-2">
+            <picture>
+              <img class="image-app" src="./images/popular-this-week/app-2.png" alt="image app-2" />
+            </picture>
+            <div class="info-card">
+              <h3>Tribe 2.0</h3>
+              <p>Introducing Augmented Messaging<sup>TM</sup></p>
+              <div class="buttons">
+                <button type="button">
+                  <img class="arrow-top" src="./images/votes.png" alt="image up arrow" />
+                  <span>1465</span>
+                </button>
+                <button type="button">
+                  <img class="comment" src="./images/comments.png" alt="image comments" />
+                  <span>188</span>
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-list-ul" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                  </svg>
+                  SAVE
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                    <path fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                  </svg>
+                </button>
+                <div class="buttons-end">
+                  <button type="button">
+                    IPHONE
+                  </button>
+                  <span>+2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-3">
+            <picture>
+              <img class="image-app" src="./images/popular-this-week/app-3.png" alt="image app-3" />
+            </picture>
+            <div class="info-card">
+              <h3>Workplace by Facebook</h3>
+              <p>Connect everyone in your company and turn ideas into action</p>
+              <div class="buttons">
+                <button type="button">
+                  <img class="arrow-top" src="./images/votes.png" alt="image up arrow" />
+                  <span>1003</span>
+                </button>
+                <button type="button">
+                  <img class="comment" src="./images/comments.png" alt="image comments" />
+                  <span>80</span>
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-list-ul" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                  </svg>
+                  SAVE
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                    <path fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                  </svg>
+                </button>
+                <div class="buttons-end">
+                  <button type="button">
+                    IPHONE
+                  </button>
+                  <span>+2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="show-more">
+          <img class='arrow-down' src="./images/arrow-down.png" alt="image arrow down" />
+          <h3>SHOW MORE</h3>
+        </div>
+      </section>
+
+      <section class="today">
+        <header>
+          <h3>Today</h3>
+          <div class="menu">
+            <span class="popular">POPULAR</span>
+            <span class="newest">NEWEST</span>
+          </div>
+        </header>
+
+        <div class="cards">
+          <div class="card card-4">
+            <picture>
+              <img class="image-app" src="./images/today/app-1.png" alt="image sprayscape" />
+            </picture>
+
+            <div class="info-card">
+              <h3>Sprayscape</h3>
+              <p>A perfectly imperfect VR-ish camera experiment, by Google</p>
+              <div class="buttons">
+                <button type="button">
+                  <img class="arrow-top" src="./images/votes.png" alt="image up arrow" />
+                  <span>82</span>
+                </button>
+                <button type="button">
+                  <img class="comment" src="./images/comments.png" alt="image comments" />
+                  <span>8</span>
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-list-ul" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                  </svg>
+                  SAVE
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                    <path fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                  </svg>
+                </button>
+                <div class="buttons-end">
+                  <button type="button">
+                    IPHONE
+                  </button>
+                  <span>+2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-5">
+            <picture>
+              <img class="image-app" src="./images/today/app-2.png" alt="image sprayscape" />
+            </picture>
+
+            <div class="info-card">
+              <h3>Ask Gary Vee</h3>
+              <p>The unofficial Gary Vee persona chatbot on Messenger!</p>
+              <div class="buttons">
+                <button type="button">
+                  <img class="arrow-top" src="./images/votes.png" alt="image up arrow" />
+                  <span>21</span>
+                </button>
+                <button type="button">
+                  <img class="comment" src="./images/comments.png" alt="image comments" />
+                  <span>9</span>
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-list-ul" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                  </svg>
+                  SAVE
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                    <path fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                  </svg>
+                </button>
+                <div class="buttons-end">
+                  <button type="button">
+                    IPHONE
+                  </button>
+                  <span>+2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-6">
+            <picture>
+              <img class="image-app" src="./images/today/app-3.png" alt="image electron wheel" />
+            </picture>
+
+            <div class="info-card">
+              <h3>The Electron Wheel</h3>
+              <p>Turn your standarbard bicycle into an electric bike.</p>
+              <div class="buttons">
+                <button type="button">
+                  <img class="arrow-top" src="./images/votes.png" alt="image up arrow" />
+                  <span>23</span>
+                </button>
+                <button type="button">
+                  <img class="comment" src="./images/comments.png" alt="image comments" />
+                  <span>2</span>
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-list-ul" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                  </svg>
+                  SAVE
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                    <path fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                  </svg>
+                </button>
+                <div class="buttons-end">
+                  <button type="button">
+                    IPHONE
+                  </button>
+                  <span>+2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-7">
+            <picture>
+              <img class="image-app" src="./images/today/app-4.webp" alt="image sprayscape" />
+            </picture>
+
+            <div class="info-card">
+              <h3>Lattice Reviews</h3>
+              <p>A360 degree feedback and performance reviews</p>
+              <div class="buttons">
+                <button type="button">
+                  <img class="arrow-top" src="./images/votes.png" alt="image up arrow" />
+                  <span>19</span>
+                </button>
+                <button type="button">
+                  <img class="comment" src="./images/comments.png" alt="image comments" />
+                  <span>4</span>
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-list-ul" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                  </svg>
+                  SAVE
+                </button>
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                    <path fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                  </svg>
+                </button>
+                <div class="buttons-end">
+                  <button type="button">
+                    IPHONE
+                  </button>
+                  <span>+2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="main-lateral">
+      <section class="kittybot">
+        <img class="close" src="./images/close.png" alt="image close" />
+        <h3>Kittybot for Slack</h3>
+        <p>A friendly geline that sends you cool new things</p>
+        <button type="button">ADD KITTYBOT TO SLACK</button>
+      </section>
+
+      <section class="live-chat">
+        <h3>UPCOMMING LIVE CHATS</h3>
+        <div class=" cards">
+          <div class="card card-1">
+            <img class="live-avatar" src="./images/avatar/avatar-2.png" alt="image avatar 1">
+            <div class="container-avatar-info">
+              <h4>Adam Bescvinch</h4>
+              <p>VC at Deep Fork Capital</p>
+              <button class="remind-me" type="button">REMIND ME</button>
+            </div>
+          </div>
+          <div class="card card-2">
+            <img class="live-avatar" src="./images/avatar/avatar-2.png" alt="image avatar 1">
+            <div class="container-avatar-info">
+              <h4>Susan David</h4>
+              <p>Author of Emotionally Guilty</p>
+              <button class="remind-me" type="button">REMIND ME</button>
+            </div>
+          </div>
+          <div class="card card-3">
+            <img class="live-avatar" src="./images/avatar/avatar-3.png" alt="image avatar 1">
+            <div class="container-avatar-info">
+              <h4>Avid Larizadeh Duggan</h4>
+              <p>General Partner at GV</p>
+              <button class="remind-me" type="button">REMIND ME</button>
+            </div>
+          </div>
+          <div class="card card-4">
+            <img class="live-avatar" src="./images/avatar/avatar-4.png" alt="image avatar 1">
+            <div class="container-avatar-info">
+              <h4>Jocelyn Glei</h4>
+              <p>
+                Master of Productivity.
+                founder and author...
+              </p>
+              <button class="remind-me" type="button">REMIND ME</button>
+            </div>
+          </div>
+        </div>
+        <span class="see-more">SEE MORE</span>
+      </section>
+
+      <div class="tweets">
+        <header>
+          <div class="tweet-info">
+            <h3>Tweets</h3>
+            <span>liked by</span>
+          </div>
+          <span>@PodructHuntLOVE</span>
+        </header>
+        <div class="product">
+          <div class="info-person">
+            <img class="avatar-tweet" src="./images/avatar/avatar-1.webp" alt="image avatar one">
+            <div class="info-avatar">
+              <h3>
+                Max Pelzner
+              </h3>
+              <p>
+                @WhoolsMaxPelzmer
+              </p>
+            </div>
+          </div>
+
+          <div class="message">
+            <p>
+              'Ask <span class="blue">@GaryVee</span>' 🤖 is on <span class="blue">@ProductHunt</span>!
+              <span class="blue">cards.twitter.com/cards/18ce45yr...</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-footer">
+      <img class="avatar-footer" src="./images/avatar/avatar-1.webp" alt="image avatar" />
+      <p>
+        Hey everyone! We first launched our goal management tool on Product tool
+        on Product Hunt about 5 months agost.
+      </p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
